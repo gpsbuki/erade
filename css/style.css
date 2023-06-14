@@ -17,6 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -27,7 +28,7 @@ body {
   padding: 1.4rem 7%;
   background-color: rgba(1, 1, 1, 0.6);
   border-bottom: 1px solid #513c28;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -107,7 +108,7 @@ body {
 }
 .navbar .search-form label {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--bg);
   margin-right: 1.5rem;
 }
@@ -499,6 +500,25 @@ footer .credit a {
   color: #fff;
   margin-top: 1rem;
   padding: 1rem 1.6rem;
+}
+
+/* Back To Top */
+.back-to-top-icon {
+  position: fixed;
+  color: #fefefe;
+  cursor: pointer;
+  z-index: 9999;
+  width: 3rem;
+  height: 3rem;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.back-to-top-icon:hover {
+  color: var(--primary);
 }
 
 /* Media Queries */
